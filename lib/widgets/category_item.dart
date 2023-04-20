@@ -1,4 +1,4 @@
-import 'package:delimeals/category_meals_screen.dart';
+import 'package:delimeals/screens/category_meals_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -18,7 +18,7 @@ class CategoryItem extends StatelessWidget {
     // ));
     Navigator.pushNamed(
       context,
-      "/categories_meals",
+      CategoryMealsScreen.routeName,
       arguments: {
         "id":id,
         "title":title
